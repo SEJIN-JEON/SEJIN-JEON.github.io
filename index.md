@@ -8,23 +8,24 @@ I am a Ph.D in Korean Literature, Seoul National Univeristy.
 Currently serving as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS)and Dankook University (DKU). My research focuses on contemporary Korean poetry studies.
 
 ## Education 
-**[Seoul National University, Seoul, South Korea]**
+**Seoul National University, Seoul, South Korea**
 
-Doctor of Philosophy in Literature                                                              Earned on Feburary 26, 2024
-
+[Earned on Feburary 26, 2024]Doctor of Philosophy in Literature
 Department of Korean Lauguage and Literature
-
 Dissertation Title: “Art Community of Kyeong-sung in the 1930s and the Meaning of Synthetic Art Project”
-
 PhD Committee Member: Seungjin Hong(Chair), Yoojung Kim, Jongso Park, Eunjee Lee, Suntae Ryu 
 
-Seoul National University, Seoul, South Korea
-Master of Arts in Korean Language and Literature                                    Earned on August 29, 2017
+
+**Seoul National University, Seoul, South Korea**
+
+[Earned on August 29, 2017] Master of Arts in Korean Language and Literature 
 Department of Korean Lauguage and Literature
 Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji Yong”(in Korean)
 
-University of Seoul, Seoul, South Korea
-Bachelor of science, in Life science, Environmental Horticulture                  Earned on February 24, 2015
+
+**University of Seoul, Seoul, South Korea**
+
+[Earned on February 24, 2015]Bachelor of science, in Life science, Environmental Horticulture 
 Bachelor of Arts, Korean Language and Literature 
 
 
