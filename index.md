@@ -5,7 +5,9 @@ layout: homepage
 ## About Me
 
 I am a Ph.D in Korean Literature, Seoul National Univeristy.
-Currently serving as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS)and Dankook University (DKU). My research focuses on contemporary Korean poetry studies.
+
+Currently serving as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS)and Dankook University (DKU). 
+My research focuses on contemporary Korean poetry studies.
 
 ## Education 
 - **Seoul National University, Seoul, South Korea**  
