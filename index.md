@@ -12,7 +12,7 @@ My research focuses on contemporary Korean poetry studies.
 ## Education 
 - **Seoul National University**  
   **Doctor of Philosophy in Literature[2024.02]**
-Department of Korean Lauguage and Literature
+   Department of Korean Lauguage and Literature
 Dissertation Title: “Art Community of Kyeong-sung in the 1930s and the Meaning of Synthetic Art Project”
 PhD Committee Member: Seungjin Hong(Chair), Yoojung Kim, Jongso Park, Eunjee Lee, Suntae Ryu 
 
