@@ -28,8 +28,8 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 
 ## Research Interests
 
-- **Korean Modern Poetry:** 
-- **Digital Humanities:** 
+- **Korean Modern Poetry** 
+- **Digital Humanities** 
 
 ## Reasearch Activities (Details in CV)
 
@@ -41,6 +41,3 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 - **[Apr. 2019]** " A Study on the politics of the theory of Intellectualism in the 1930s Focusing on the comparing with the theory of Japanese Intellecturalism"
 - **[Aug. 2018]** “A Study on the Traces of Ontological Thought in Kim, Chun-Soo’s Early Poems”
 
-{% include_relative _includes/publications.md %}
-
-{% include_relative _includes/services.md %}
