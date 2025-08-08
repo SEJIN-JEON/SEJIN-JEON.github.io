@@ -22,7 +22,7 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 
 - **University of Seoul, Seoul**  
   **Bachelor of science, in Life science, Environmental Horticulture [2015.02]**
-   Bachelor of Arts, Korean Language and Literature 
+  **Bachelor of Arts, Korean Language and Literature[2015.02]** 
 
 
 ## Research Interests
