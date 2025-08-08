@@ -21,8 +21,7 @@ PhD Committee Member: Seungjin Hong(Chair), Yoojung Kim, Jongso Park, Eunjee Lee
 Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji Yong”(in Korean)
 
 - **University of Seoul, Seoul**  
-  **Bachelor of science, in Life science, Environmental Horticulture [2015.02]**
-  **Bachelor of Arts, Korean Language and Literature[2015.02]** 
+  **Bachelor of science, in Life science, Environmental Horticulture & Bachelor of Arts, Korean Language and Literature  [2015.02]**
 
 
 ## Research Interests
@@ -31,7 +30,7 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 - **Transtlation**
 - **Digital Humanities** 
 
-## Reasearch Activities (Details in CV)
+## Journal Articles (Details in CV)
 - **[Jun. 2025]** "A Study on Methods of Constructing a Database of Korean Modern Authors - Focusing on Relational Database Design and Its Limitations"
 - **[Dec. 2023]** “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”
 - **[Apr. 2023]** “Reading Korean Literature in English Translation from a Distance (1) : Modern Literature”
