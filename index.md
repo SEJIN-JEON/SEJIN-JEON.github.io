@@ -6,7 +6,7 @@ layout: homepage
 I am a visiting professor in School of Liberal Arts, SEOULTECH University.
 
 Served as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS) and Dankook University (DKU).
-My research focuses on contemporary Korean poetry studies including study of translation, Digital Humanities, 1930s Kyungsung Cultures. 
+My research focuses on Korean Moderon poetry including study of translation, Digital Humanities, 1930s Kyungsung Cultures. 
 
 ## Education 
 - **Seoul National University**  
@@ -24,12 +24,6 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
   **Bachelor of science, in Life science, Environmental Horticulture & Bachelor of Arts, Korean Language and Literature  [2015.02]**
 
 
-## Research Interests
-
-- **Korean Modern Poetry**
-- **Transtlation**
-- **Digital Humanities** 
-
 ## Journal Articles (Details in CV)
 - **[Jun. 2025]** "A Study on Methods of Constructing a Database of Korean Modern Authors - Focusing on Relational Database Design and Its Limitations"
 - **[Dec. 2023]** “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”
@@ -40,3 +34,12 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 - **[Apr. 2019]** " A Study on the politics of the theory of Intellectualism in the 1930s Focusing on the comparing with the theory of Japanese Intellecturalism"
 - **[Aug. 2018]** “A Study on the Traces of Ontological Thought in Kim, Chun-Soo’s Early Poems”
 
+## Presentations 
+- “Jeong Ji Yong and Fra Angelico - Focusing on the concept of ‘Incarnational Image’”, KSGSC2018, Sapienza University, Rome, Italy, 2018.09.28.
+- “Detours and Allegories: Studying Images as Internal Logic - Focusing on the poetry collection "Baekrokdam(白鹿潭, 백록담)" by Jeong Ji-yong”, 220th Academic Conference of Institute of Korean Literary(한국어문교육회), 2019.03.16.
+- “Between translation and creation of Jeong jiyong, the place of choson imagery and Affection”, 2nd Annual Conference 2020 of The Learned Society Of Korean Modern Literature(한국현대문학회), 2020.08.22.
+- “1930s “Munjang(문장, 文章)" Study 1 - Study of Early " Munjang(문장, 文章)" Poetry”, 21st Academic Conference of Chunwon Research Society(춘원연구학회), 2021.03.27.
+- “A study on unearthed three poetic works by Jeong Jiyong”, 1st Annual Conference 2022 of The Learned Society Of Korean Modern Literature(한국현대문학회), 2022.02.19.
+- [Co-authored presentation] “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”, 28th Conference of The Society for the Translation of Korean Classics(한국고전번역학회), 2023. 06. 30.
+- “Kyungsung’s Play-theory, The Mask of 'Amusement’ and Problems Concealed”, 27th Academic Conference of Chunwon Research Society(춘원연구학회), 2024.03.16.
+- [Co-authored presentation]"The Publication of Korean Literature in French Translation 32): Focusing on Éditions Picquier", 1st Annual Conference 2025 of the The Learned Society Of Korean Modern Literature(한국현대문학회), 2025.02.22.
