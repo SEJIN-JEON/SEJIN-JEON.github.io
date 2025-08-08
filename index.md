@@ -3,11 +3,9 @@ layout: homepage
 ---
 
 ## About Me
-
-I am a Ph.D in Korean Literature, Seoul National Univeristy.
-
-Currently serving as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS)and Dankook University (DKU). 
-My research focuses on contemporary Korean poetry studies.
+I am a visiting professor in School of Liberal Arts, SEOULTECH University.
+Served as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS) and Dankook University (DKU).
+My research focuses on contemporary Korean poetry studies including study of translation, Digital Humanities, 1930s Kyungsung Cultures. 
 
 ## Education 
 - **Seoul National University**  
@@ -28,11 +26,12 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 
 ## Research Interests
 
-- **Korean Modern Poetry** 
+- **Korean Modern Poetry**
+- **Transtlation**
 - **Digital Humanities** 
 
 ## Reasearch Activities (Details in CV)
-
+- **[Jun. 2025]** "A Study on Methods of Constructing a Database of Korean Modern Authors - Focusing on Relational Database Design and Its Limitations"
 - **[Dec. 2023]** “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”
 - **[Apr. 2023]** “Reading Korean Literature in English Translation from a Distance (1) : Modern Literature”
 - **[Aug. 2021]** “A Study on Transtlation of Jeong Ji-Yong (2) : Between Translation and Writing, Self-transforming Creation - Mainly Poetic Transformation through Adopting Motifs from Greek mythology”
