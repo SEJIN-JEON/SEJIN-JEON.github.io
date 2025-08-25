@@ -25,6 +25,7 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 
 
 ## Journal Articles (Details in CV)
+- **[Aug. 2025]** "A Study on the Translation and Publication of Korean Literature into French (3): Focusing on Édition Picquier"
 - **[Jun. 2025]** "A Study on Methods of Constructing a Database of Korean Modern Authors - Focusing on Relational Database Design and Its Limitations"
 - **[Dec. 2023]** “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”
 - **[Apr. 2023]** “Reading Korean Literature in English Translation from a Distance (1) : Modern Literature”
@@ -42,4 +43,16 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 - “A study on unearthed three poetic works by Jeong Jiyong”, 1st Annual Conference 2022 of The Learned Society Of Korean Modern Literature(한국현대문학회), 2022.02.19.
 - [Co-authored presentation] “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”, 28th Conference of The Society for the Translation of Korean Classics(한국고전번역학회), 2023. 06. 30.
 - “Kyungsung’s Play-theory, The Mask of 'Amusement’ and Problems Concealed”, 27th Academic Conference of Chunwon Research Society(춘원연구학회), 2024.03.16.
+- “A Study on the Construction and Analysis of the Art Community Network in Kyungsung in the 1930s”, 2nd Kyungsung Colloquium, 경성 디지털 문학지도 공동연구단, 2025.02.07.
 - [Co-authored presentation]"The Publication of Korean Literature in French Translation 32): Focusing on Éditions Picquier", 1st Annual Conference 2025 of the The Learned Society Of Korean Modern Literature(한국현대문학회), 2025.02.22.
+
+## Project
+
+- NRF : Academic Research Fellowship (B Type) (한국연구재단: 인문사회학술연구교수 B유형)
+ “A Study on the Aspects of the Synthetic Art Project through the Data Construction and Analysis of the Art Community Network in the 1930s”
+Position: lead researcher
+
+-MOE: Domestic Research Group Grants(교육부: 일반공동연구지원사업) 
+“A Convergence Study for Deep-Learning-Based AI Fiction Generation with Human in the Loop” (Research Director: Misun Yun)
+(인간과 협업하는 딥러닝 기반 AI 소설 생성 융합 연구, 연구책임자 : 윤미선)
+Position:  Research Assistant
