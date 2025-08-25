@@ -50,9 +50,9 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 
 - NRF : Academic Research Fellowship (B Type) (한국연구재단: 인문사회학술연구교수 B유형)
  “A Study on the Aspects of the Synthetic Art Project through the Data Construction and Analysis of the Art Community Network in the 1930s”
-Position: lead researcher
+ **Position: lead researcher**
 
--MOE: Domestic Research Group Grants(교육부: 일반공동연구지원사업) 
+- MOE: Domestic Research Group Grants(교육부: 일반공동연구지원사업) 
 “A Convergence Study for Deep-Learning-Based AI Fiction Generation with Human in the Loop” (Research Director: Misun Yun)
 (인간과 협업하는 딥러닝 기반 AI 소설 생성 융합 연구, 연구책임자 : 윤미선)
-Position:  Research Assistant
+ **Position:  Research Assistant**
