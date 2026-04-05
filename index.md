@@ -27,15 +27,15 @@ Dissertation Title: “A Study of Incarnatioanl Imagery in the Petry of Jeong Ji
 
 ## Journal Articles (Details in CV)
 - **[Feb. 2026]** "A Preliminary Study on the Database Design for Mystery Literature - Focusing on Korean Detective Novels",  http://dx.doi.org/10.18856/jpn.2026.32.1.002 
-- **[Aug. 2025]** "A Study on the Translation and Publication of Korean Literature into French (3): Focusing on Édition Picquier"
-- **[Jun. 2025]** "A Study on Methods of Constructing a Database of Korean Modern Authors - Focusing on Relational Database Design and Its Limitations"
-- **[Dec. 2023]** “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”
-- **[Apr. 2023]** “Reading Korean Literature in English Translation from a Distance (1) : Modern Literature”
-- **[Aug. 2021]** “A Study on Transtlation of Jeong Ji-Yong (2) : Between Translation and Writing, Self-transforming Creation - Mainly Poetic Transformation through Adopting Motifs from Greek mythology”
-- **[Oct. 2020]** “A Study on Translation of Jeong Ji-Yong (1) : Special References of Jeong Ji-Yong’s Early translated poems-Mainly R. Tagore and W. Blake’s poems translated by Jeong Ji-Yong”
-- **[Dec. 2019]** "Pungto of Sense, Pungto of Poetry -Focusing on the Pungto Imagery of Kim Chunsu"
-- **[Apr. 2019]** " A Study on the politics of the theory of Intellectualism in the 1930s Focusing on the comparing with the theory of Japanese Intellecturalism"
-- **[Aug. 2018]** “A Study on the Traces of Ontological Thought in Kim, Chun-Soo’s Early Poems”
+- **[Aug. 2025]** "A Study on the Translation and Publication of Korean Literature into French (3): Focusing on Édition Picquier", http://dx.doi.org/10.23033/inhaks.2025..78.010
+- **[Jun. 2025]** "A Study on Methods of Constructing a Database of Korean Modern Authors - Focusing on Relational Database Design and Its Limitations", http://dx.doi.org/10.17297/rsll.2025.124..007
+- **[Dec. 2023]** “Reading Korean Literature in English Translation from a Distance (2)-Classical Literature-”, http://dx.doi.org/10.17297/rsll.2025.124..007
+- **[Apr. 2023]** “Reading Korean Literature in English Translation from a Distance (1) : Modern Literature”, (https://www.kci.go.kr/kciportal/landing/article.kci?arti_id=ART002958346)
+- **[Aug. 2021]** “A Study on Transtlation of Jeong Ji-Yong (2) : Between Translation and Writing, Self-transforming Creation - Mainly Poetic Transformation through Adopting Motifs from Greek mythology”, http://dx.doi.org/10.22871/mklite.2021..64.004
+- **[Oct. 2020]** “A Study on Translation of Jeong Ji-Yong (1) : Special References of Jeong Ji-Yong’s Early translated poems-Mainly R. Tagore and W. Blake’s poems translated by Jeong Ji-Yong”, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002641078
+- **[Dec. 2019]** "Pungto of Sense, Pungto of Poetry -Focusing on the Pungto Imagery of Kim Chunsu", http://dx.doi.org/10.31809/crj.2019.12.16.349
+- **[Apr. 2019]** "A Study on the politics of the theory of Intellectualism in the 1930s Focusing on the comparing with the theory of Japanese Intellecturalism", http://dx.doi.org/10.35153/gubokr.2019..21.008
+- **[Aug. 2018]** “A Study on the Traces of Ontological Thought in Kim, Chun-Soo’s Early Poems”, https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART002379148
 
 ## Presentations 
 - [Co-authored presentation]"The Publication of Korean Literature in French Translation 32): Focusing on Éditions Picquier", 1st Annual Conference 2025 of the The Learned Society Of Korean Modern Literature(한국현대문학회), 2025.02.22.
