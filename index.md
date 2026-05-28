@@ -3,10 +3,10 @@ layout: homepage
 ---
 
 ## About Me
-I am a visiting professor in School of Liberal Arts, SEOULTECH University.
+I am a visiting professor in School of Liberal Arts, Seoul National University of Science and Technology.
 
 Served as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS) and Dankook University (DKU).
-My research focuses on Korean Moderon poetry including study of translation, Digital Humanities, 1930s Kyungsung Cultures. 
+My research focuses on Korean Modern poetry including study of Translation, Digital Humanities, Kyungsung Cultures of 1930s. 
 
 ## Education 
 - **Seoul National University**  
