@@ -3,7 +3,7 @@ layout: homepage
 ---
 
 ## About Me
-I am a Adjunct Professor in School of Liberal Arts, Seoul National University of Science and Technology.
+I am an Adjunct Professor in School of Liberal Arts, Seoul National University of Science and Technology.
 
 Served as a lecturer in Literature, Culture, and Writing at Seoul National University (SNU), University of Seoul (UOS) and Dankook University (DKU).
 My research focuses on Korean Modern poetry including study of Translation, Digital Humanities, Kyungsung Cultures of 1930s. 
