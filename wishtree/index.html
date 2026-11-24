@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
+<title>소원나무</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--ink:#f6ead6;--muted:#b9ab97;--card:#17140f;--line:#3b3228;--red:#d62f3a;--gold:#ffd277;color-scheme:dark}
+*,*::before,*::after{box-sizing:inherit}
+html{height:100%;scroll-padding-top:env(safe-area-inset-top,0px);background:#000}
+[hidden]{display:none!important}
+body{margin:0;min-height:100%;background:linear-gradient(180deg,#000 0%,#02040a 60%,#060a14 100%) fixed;color:var(--ink);font-family:'Gowun Batang','Noto Serif KR','Nanum Myeongjo',serif;line-height:1.6}
+button,input,textarea{font:inherit;color:inherit}
+button{cursor:pointer}
+main{position:relative;z-index:2;max-width:600px;margin:0 auto;padding:20px 16px 110px}
+header{text-align:center;margin-bottom:6px}
+h1{margin:0;font-size:2rem;letter-spacing:.02em;text-shadow:0 0 18px rgba(255,210,119,.35)}
+.sub{margin:2px 0 0;color:var(--muted);font-size:.95rem}
+#dday{display:inline-block;margin-left:6px;padding:0 10px;border-radius:99px;background:var(--red);color:#fff;font-size:.82rem}
+.tabs{display:flex;justify-content:center;gap:8px;margin:12px 0 4px}
+.tabs button{padding:6px 16px;border-radius:99px;border:1px solid var(--line);background:transparent}
+.tabs button.on{background:#1f7a52;border-color:#1f7a52;color:#fff}
+.status,.count{text-align:center;color:var(--muted);font-size:.9rem;min-height:1.4em}
+.sky,.snow{position:fixed;inset:0;z-index:0;pointer-events:none;overflow:hidden}
+.snow{z-index:1}
+.sky i{position:absolute;border-radius:50%;background:#fff;animation:tw 3s ease-in-out infinite alternate}
+@keyframes tw{from{opacity:.15}to{opacity:.95}}
+.snow i{position:absolute;top:-10px;border-radius:50%;background:#fff;opacity:.85;animation:fall linear infinite}
+@keyframes fall{to{transform:translate3d(var(--dx,20px),105vh,0)}}
+.east{position:fixed;z-index:1;top:calc(14px + env(safe-area-inset-top,0px));right:5vw;width:var(--s,24px);text-align:center;pointer-events:none}
+.east svg{display:block;width:100%;height:auto;overflow:visible}
+.east .br{transform-box:fill-box;transform-origin:center;animation:pulse 3s ease-in-out infinite alternate}
+.east span{display:block;margin-top:2px;font-size:.7rem;color:var(--gold);opacity:.8;white-space:nowrap;transform:translateX(calc(var(--s,24px)/-2 + 50%));}
+@keyframes pulse{from{opacity:.6;transform:scale(.92)}to{opacity:1;transform:scale(1.12)}}
+.treeWrap{position:relative;width:100%;max-width:520px;margin:4px auto 0;aspect-ratio:100/112;container-type:inline-size}
+#tree{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+#tree .hl{fill:none;stroke:#2fae7c;stroke-width:1.5;stroke-linecap:round;opacity:.7}
+#tree .dk{fill:none;stroke:#07392a;stroke-width:1.4;stroke-linecap:round;opacity:.65}
+#tree .gl{fill:none;stroke-width:1.7;stroke-dasharray:.1 6.4;stroke-linecap:round;animation:tw 1.8s ease-in-out infinite alternate}
+#tree .lt{animation:tw 1.6s ease-in-out infinite alternate}
+#tree .sp{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-in-out infinite alternate}
+#tags{position:absolute;inset:0;--tw:8}
+.tag{position:absolute;width:calc(var(--tw)*1cqw);aspect-ratio:4/5;transform:translateX(-50%);transform-origin:50% -6px;padding:18% 0 0;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;color:#2b2b2b;clip-path:polygon(22% 0,78% 0,100% 16%,100% 100%,0 100%,0 16%);animation:sway 4s ease-in-out infinite alternate;animation-delay:var(--d,0s)}
+.tag.together{background:var(--red);color:#fff}
+.tag b{font-size:max(8px,calc(var(--tw)*.42cqw));line-height:1}
+.tag small{font-size:max(6px,calc(var(--tw)*.2cqw));line-height:1.2}
+.tag::after{content:"";position:absolute;top:6%;left:50%;width:12%;aspect-ratio:1;margin-left:-6%;border-radius:50%;background:rgba(0,0,0,.35)}
+.tag.lit{box-shadow:inset 0 0 0 2.5px var(--gold)}
+@keyframes sway{from{transform:translateX(-50%) rotate(-3.5deg)}to{transform:translateX(-50%) rotate(3.5deg)}}
+.empty{text-align:center;color:var(--muted);margin:6px 0}
+.legend{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.85rem;margin-top:10px}
+.legend i{display:inline-block;width:11px;height:13px;border-radius:2px;margin-right:5px;vertical-align:-2px;background:#fff}
+.legend i.t{background:var(--red)}
+#listWrap{display:grid;gap:12px;margin-top:10px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:14px 16px}
+.card.mine{border-left:5px solid #fff}
+.card.together{border-left:5px solid var(--red)}
+.meta{display:flex;flex-wrap:wrap;gap:8px;align-items:center;color:var(--muted);font-size:.85rem}
+.chip{padding:1px 10px;border-radius:99px}
+.chip.mine{background:#fff;color:#222}
+.chip.together{background:var(--red);color:#fff}
+.meta time{margin-left:auto}
+.card p{margin:10px 0 12px;white-space:pre-wrap;word-break:break-word;font-size:1.05rem}
+.acts{display:flex;gap:8px;flex-wrap:wrap}
+.pray{padding:7px 14px;border-radius:99px;border:1px solid var(--gold);background:transparent}
+.pray.on{background:var(--gold);color:#3a2300}
+.del{padding:7px 12px;border-radius:99px;border:1px solid var(--line);background:transparent;color:var(--muted);font-size:.85rem}
+.fab{position:fixed;z-index:5;left:50%;transform:translateX(-50%);bottom:calc(18px + env(safe-area-inset-bottom,0px));padding:13px 26px;border-radius:99px;border:0;background:var(--red);color:#fff;font-weight:700;font-size:1.05rem;box-shadow:0 8px 22px rgba(214,47,58,.45)}
+.overlay{position:fixed;inset:0;z-index:10;background:rgba(0,0,0,.7);display:flex;align-items:center;justify-content:center;padding:16px}
+.sheet{position:relative;width:100%;max-width:440px;max-height:92%;overflow:auto;background:#1b1712;border:1px solid var(--line);border-radius:20px;padding:22px 20px 20px}
+.sheet h2{margin:0 0 12px;font-size:1.3rem}
+.sheet .card{padding:4px 0 0 14px;border-top:0;border-right:0;border-bottom:0;background:transparent;border-radius:0}
+.x{position:absolute;top:10px;right:12px;border:0;background:transparent;font-size:1.5rem;color:var(--muted)}
+.seg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:12px}
+.seg input{position:absolute;opacity:0}
+.seg span{display:block;text-align:center;padding:9px 6px;border:1px solid var(--line);border-radius:12px;font-size:.95rem}
+.seg label:nth-child(1) input:checked+span{background:#fff;color:#222;border-color:#fff;font-weight:700}
+.seg label:nth-child(2) input:checked+span{background:var(--red);color:#fff;border-color:var(--red);font-weight:700}
+.seg input:focus-visible+span{outline:2px solid var(--gold)}
+.f{display:block;margin-bottom:12px;font-size:.9rem;color:var(--muted)}
+.f input,.f textarea{display:block;width:100%;margin-top:4px;padding:10px 12px;border:1px solid var(--line);border-radius:12px;background:#0d0b08;font-size:16px;resize:vertical}
+.row{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:.85rem;margin-bottom:14px;min-height:1.6em}
+.note{margin:0 0 12px;color:var(--muted);font-size:.85rem}
+.primary{width:100%;padding:12px;border:0;border-radius:14px;background:var(--red);color:#fff;font-weight:700;font-size:1.05rem}
+.primary:disabled{opacity:.6}
+#toast{position:fixed;z-index:20;left:50%;bottom:calc(86px + env(safe-area-inset-bottom,0px));transform:translateX(-50%);max-width:90%;padding:10px 18px;border-radius:99px;background:#f6ead6;color:#2b1d14;font-size:.92rem;text-align:center;opacity:0;pointer-events:none;transition:opacity .25s}
+#toast.on{opacity:1}
+@media (prefers-reduced-motion:reduce){.tag,.sky i,#tree .gl,#tree .lt,#tree .sp,.east .br,.snow i{animation:none}.snow{display:none}}
+</style>
+</head>
+<body>
+<div class="sky" id="sky" aria-hidden="true"></div>
+<div class="east" id="east" aria-hidden="true">
+  <svg viewBox="-50 -50 100 100"><defs><radialGradient id="eg"><stop offset="0" stop-color="#fff"/><stop offset=".25" stop-color="#fff2b8" stop-opacity=".9"/><stop offset="1" stop-color="#ffd277" stop-opacity="0"/></radialGradient></defs>
+  <circle class="br" r="48" fill="url(#eg)"/>
+  <path d="M0-48 Q3-3 48 0 Q3 3 0 48 Q-3 3 -48 0 Q-3-3 0-48Z" fill="#fff8d8"/>
+  <path d="M0-28 Q2-2 28 0 Q2 2 0 28 Q-2 2 -28 0 Q-2-2 0-28Z" fill="#fff" transform="rotate(45)"/>
+  <circle r="5" fill="#fff"/></svg>
+  <span>동방의 별</span>
+</div>
+<div class="snow" id="snow" aria-hidden="true"></div>
+<main>
+  <header>
+    <h1>🎄 소원나무</h1>
+    <p class="sub">서로의 기도를 나무에 걸어 두어요<span id="dday" hidden></span></p>
+  </header>
+  <div class="tabs">
+    <button data-view="tree" class="on">🎄 나무</button>
+    <button data-view="list">📜 목록</button>
+  </div>
+  <div id="status" class="status" role="status">불러오는 중…</div>
+  <div id="count" class="count"></div>
+  <section id="treeWrap" class="treeWrap">
+    <svg id="tree" viewBox="0 0 100 112" aria-hidden="true"></svg>
+    <div id="tags"></div>
+  </section>
+  <section id="listWrap" hidden></section>
+  <p id="empty" class="empty" hidden>아직 걸린 소원이 없어요. 첫 소원을 달아 보세요 ✨</p>
+  <div class="legend"><span><i></i>나의 기도</span><span><i class="t"></i>함께 기도 부탁</span><span>🙏 함께 기도한 수</span></div>
+</main>
+<button id="add" class="fab">＋ 소원 달기</button>
+<div id="modal" class="overlay" hidden><div class="sheet" id="sheet"></div></div>
+<div id="toast" role="status"></div>
+
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-auth-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.14.1/firebase-firestore-compat.js"></script>
+<script>
+/* ★ Firebase 콘솔에서 복사한 설정값을 아래에 붙여넣으세요 */
+const FIREBASE_CONFIG={
+  apiKey:"AIzaSyCgFHeCXGfa6vAQAadgoKUnYD0qUK1ndXA",
+  authDomain:"wishtree-pray.firebaseapp.com",
+  projectId:"wishtree-pray",
+  storageBucket:"wishtree-pray.firebasestorage.app",
+  messagingSenderId:"331486733278",
+  appId:"1:331486733278:web:37f1ae361329c802d6f34f"
+};
+/* 소원 달기 마감: 12월 25일 자정까지 (26일 0시부터 닫힘) */
+const CLOSE_AT=new Date(2026,11,26);
+const closed=()=>Date.now()>=CLOSE_AT.getTime();
+const $=s=>document.querySelector(s);
+const esc=s=>String(s==null?"":s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const md=d=>(d.getMonth()+1)+"월 "+d.getDate()+"일";
+function store(k,v){try{if(v===undefined)return localStorage.getItem(k);localStorage.setItem(k,v)}catch(e){return null}}
+function localId(){let v=store("wt-id");if(!v){v="l"+Math.random().toString(36).slice(2,10);store("wt-id",v)}return v}
+const seeded=n=>{let s=n;return()=>(s=(s*9301+49297)%233280)/233280};
+
+let db=null,me=null,isOwner=false,wishes=[],prayers=[],view="tree",openId=null,loadedW=false;
+
+/* ---------- illustration: tree ---------- */
+(()=>{
+const T=[[58,98,44,6],[42,80,35,5],[26,60,26,4],[12,40,17,3]];
+const tp=(ay,by,hw,n,dy)=>{const L=50-hw,R=50+hw,y=by+dy,m=ay+(by-ay)*.45+dy,q=by-(by-ay)*.12+dy;
+ let d=`M50 ${ay+dy} C${50+hw*.15} ${m} ${R-hw*.25} ${q} ${R+1} ${y+2}`;const w=(R-L+2)/n;let x=R+1;
+ for(let i=0;i<n;i++){const nx=x-w;d+=` Q${(x-w/2).toFixed(1)} ${y+2+(i%2?7.5:5.5)} ${nx.toFixed(1)} ${y+2}`;x=nx}
+ return d+` C${L+hw*.25} ${q} ${50-hw*.15} ${m} 50 ${ay+dy}Z`};
+const gift=(x,y,w,h,c,r)=>`<rect x="${x}" y="${y}" width="${w}" height="${h}" rx=".8" fill="${c}"/><rect x="${x+w/2-1.2}" y="${y}" width="2.4" height="${h}" fill="${r}"/><rect x="${x}" y="${y+h*.3}" width="${w}" height="2" fill="${r}"/><path d="M${x+w/2} ${y} q-4.5-5-5.5-1 q1 2.5 5.5 1 q4.5 1.5 5.5-1 q-1-4-5.5 1Z" fill="${r}"/>`;
+let h=`<defs><g id="bow"><path d="M0 0 C-3-5 -7-4 -6 0 C-7 4 -3 5 0 0Z" fill="#62cc4e"/><path d="M0 0 C3-5 7-4 6 0 C7 4 3 5 0 0Z" fill="#62cc4e"/><path d="M0 0 L-2.4 5.5 L0 3.8Z M0 0 L2.4 5.5 L0 3.8Z" fill="#3f9c38"/><path d="M-1-.2 C-3-2 -5-2 -5 0 M1-.2 C3-2 5-2 5 0" stroke="#3f9c38" stroke-width=".5" fill="none"/><circle r="1.4" fill="#2f8a2c"/></g><g id="cc"><path d="M0 7 L0 -2 A2.6 2.6 0 0 1 5.2 -2" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/><path d="M0 7 L0 -2 A2.6 2.6 0 0 1 5.2 -2" fill="none" stroke="#d62f3a" stroke-width="1.8" stroke-dasharray="1.1 1.1"/></g><radialGradient id="gl"><stop offset="0" stop-color="#fff2b8" stop-opacity=".95"/><stop offset="1" stop-color="#ffd277" stop-opacity="0"/></radialGradient></defs>`;
+h+=`<ellipse cx="50" cy="108.5" rx="48" ry="4" fill="#e8f1f8" opacity=".9"/><path d="M44 92 L45 109 L57 109 L56 92Z" fill="#8a5a33"/><path d="M47 96 L48 108 M51 95 L51.5 108 M54 96 L54 107" stroke="#5d3a1e" stroke-width=".7" fill="none"/>`;
+for(const [ay,by,hw,n] of T){
+ h+=`<path d="${tp(ay,by,hw,n,2.4)}" fill="#073627"/><path d="${tp(ay,by,hw,n,0)}" fill="#0f6b50"/>`;
+ for(const s of[-1,1]){
+  for(const f of[.55,.82])h+=`<path class="hl" d="M${(50+s*hw*f).toFixed(1)} ${by-2-(f-.55)*4} Q${(50+s*hw*f*.45).toFixed(1)} ${(by-(by-ay)*.38).toFixed(1)} ${(50+s*hw*.1).toFixed(1)} ${(ay+(by-ay)*.62-(f-.55)*14).toFixed(1)}"/>`;
+  h+=`<path class="dk" d="M${(50+s*hw*.38).toFixed(1)} ${by-3} Q${(50+s*hw*.2).toFixed(1)} ${(by-(by-ay)*.3).toFixed(1)} ${(50+s*hw*.05).toFixed(1)} ${(ay+(by-ay)*.8).toFixed(1)}"/>`}
+}
+const sil=y=>Math.max(0,...T.map(([a,b,w])=>y>=a&&y<=b?(y-a)/(b-a)*w:0));
+for(const [ay,by,hw] of T){const d=`M${(50-hw*.82).toFixed(1)} ${by-11} Q50 ${(by-11+6+hw*.14).toFixed(1)} ${(50+hw*.82).toFixed(1)} ${by-11}`;
+ h+=`<path d="${d}" fill="none" stroke="#06281e" stroke-width=".4"/>`;
+ ["#ffd277","#ff6b6b","#6ec6ff","#ff9ff3"].forEach((c,i)=>{h+=`<path class="gl" d="${d}" stroke="${c}" stroke-dashoffset="${-i*1.6}" style="animation-delay:${i*.45}s"/>`})}
+const r=seeded(11);
+for(let i=0;i<16;i++){const y=20+r()*72,w=sil(y)-5;if(w<2)continue;const x=50+(r()*2-1)*w,k=2.1+r()*.6;
+ h+=`<circle cx="${x.toFixed(1)}" cy="${y.toFixed(1)}" r="${k.toFixed(1)}" fill="${i%2?"#f0b429":"#d62f3a"}"/><circle cx="${(x-k*.3).toFixed(1)}" cy="${(y-k*.35).toFixed(1)}" r="${(k*.28).toFixed(2)}" fill="#fff" opacity=".85"/>`}
+for(const [x,y] of[[44,24],[60,47],[40,67],[63,73],[30,88],[72,90]])h+=`<use href="#bow" transform="translate(${x} ${y})"/>`;
+for(const [x,y,a] of[[54,27,12],[42,41,-10],[66,58,12],[30,77,-8],[75,81,10]])h+=`<use href="#cc" transform="translate(${x} ${y}) rotate(${a})"/>`;
+h+=gift(3,98,14,10,"#1f9d55","#ffd04a")+gift(19,101,10,7,"#f2c230","#fff")+gift(70,100,13,8,"#d63a55","#fff")+gift(85,99,10,9,"#1e8f4a","#ffd04a");
+h+=`<circle class="sp" cx="50" cy="7" r="13" fill="url(#gl)"/><path fill="#ffd34d" stroke="#ffd34d" stroke-width="1.1" stroke-linejoin="round" transform="translate(50 7.4) scale(1.15) translate(-50 -6)" d="M50 0 L51.53 3.9 L55.71 4.15 L52.47 6.8 L53.53 10.85 L50 8.6 L46.47 10.85 L47.53 6.8 L44.29 4.15 L48.47 3.9Z"/>`;
+for(let i=0;i<36;i++){const y=16+r()*78,w=sil(y)-3;if(w<2)continue;h+=`<circle class="lt" cx="${(50+(r()*2-1)*w).toFixed(1)}" cy="${y.toFixed(1)}" r=".7" fill="${i%2?"#fff3b0":"#ffb48a"}" style="animation-delay:${(r()*2).toFixed(1)}s"/>`}
+$("#tree").innerHTML=h})();
+
+/* ---------- sky, snow, east star, countdown ---------- */
+(()=>{let h="";for(let i=0;i<140;i++){const s=(Math.random()*1.8+.8).toFixed(1);h+=`<i style="left:${(Math.random()*100).toFixed(1)}%;top:${(Math.random()*100).toFixed(1)}%;width:${s}px;height:${s}px;animation-duration:${(2+Math.random()*4).toFixed(1)}s;animation-delay:${(-Math.random()*5).toFixed(1)}s"></i>`}$("#sky").innerHTML=h;
+h="";for(let i=0;i<56;i++){const s=2+Math.random()*4;h+=`<i style="left:${Math.random()*100}%;width:${s.toFixed(1)}px;height:${s.toFixed(1)}px;animation-duration:${(8+Math.random()*10).toFixed(1)}s;animation-delay:${(-Math.random()*16).toFixed(1)}s;--dx:${(Math.random()*70-35).toFixed(0)}px"></i>`}$("#snow").innerHTML=h;
+const t=new Date(),dd=Math.round((new Date(t.getFullYear(),11,25)-new Date(t.getFullYear(),t.getMonth(),t.getDate()))/864e5);
+if(dd>=0&&dd<=60){const el=$("#dday");el.hidden=false;el.textContent=dd===0?"기쁜 성탄!":"성탄까지 D-"+dd}
+const p=dd<0?1:Math.max(0,Math.min(1,1-dd/35)),e=$("#east");
+e.style.setProperty("--s",Math.round(22+p*78)+"px");e.style.opacity=(.6+.4*p).toFixed(2)})();
+
+/* ---------- wishes ---------- */
+const pcount=id=>prayers.filter(p=>p.wishId===id).length;
+const prayed=id=>prayers.some(p=>p.wishId===id&&p.uid===me);
+const isTog=w=>w.kind==="together";
+
+function genSlots(tw){
+  const th=tw*1.25+1.2,a=[],R=Math.max(3,Math.floor(64/th)+1);
+  for(let r=0;r<R;r++){const y=23+64*r/(R-1),hw=Math.max(0,(y+th/2-10)/88*44-tw/2-1),k=Math.max(2,Math.floor(2*hw/(tw+1.2))+1);
+    for(let j=0;j<k;j++)a.push([50-hw+2*hw*j/(k-1),y+(j%2?th*.22:0)])}
+  const rnd=seeded(7);for(let i=a.length-1;i>0;i--){const j=Math.floor(rnd()*(i+1));[a[i],a[j]]=[a[j],a[i]]}
+  return a;
+}
+
+function card(w){
+  const pc=pcount(w.id),pd=prayed(w.id),mine=w.uid===me,k=isTog(w)?"together":"mine";
+  const who=isTog(w)?"":`<span>${w.anon?"익명":esc(w.name)}</span>`;
+  return `<article class="card ${k}"><div class="meta"><span class="chip ${k}">${isTog(w)?"🤝 함께 기도 부탁":"🕊 나의 기도"}</span>${who}<time>${md(new Date(w.ts||Date.now()))}</time></div><p>${esc(w.text)}</p><div class="acts"><button class="pray ${pd?"on":""}" data-pray="${esc(w.id)}">🙏 ${pd?"기도하고 있어요":"함께 기도해요"} · ${pc}</button>${mine?`<button class="del" data-del="${esc(w.id)}">지우기</button>`:""}</div></article>`;
+}
+
+function render(){
+  const list=wishes.slice().sort((a,b)=>(a.ts||0)-(b.ts||0)),n=list.length;
+  document.querySelectorAll(".tabs button").forEach(b=>b.classList.toggle("on",b.dataset.view===view));
+  $("#treeWrap").hidden=view!=="tree";
+  $("#listWrap").hidden=view!=="list";
+  $("#empty").hidden=!(loadedW&&n===0);
+  $("#count").textContent=loadedW&&n?n+"개의 소원이 걸려 있어요"+(closed()?" · 소원 달기는 성탄과 함께 마무리되었어요":""):"";
+  $("#add").hidden=closed();
+  if(view==="tree"){
+    const tw=n<=26?8:n<=52?6.6:n<=90?5.4:4.4,slots=genSlots(tw);
+    $("#tags").style.setProperty("--tw",tw);
+    $("#tags").innerHTML=list.map((w,i)=>{
+      const s=slots[i%slots.length],lap=Math.floor(i/slots.length),pc=pcount(w.id);
+      const x=Math.min(95,s[0]+lap*1.8),y=Math.min(88,s[1]+lap*1.8);
+      const ini=isTog(w)||w.anon?"✦":([...String(w.name||"?")][0]||"?");
+      const lab=isTog(w)?"함께 기도 부탁 보기":(w.anon?"익명":esc(w.name))+"의 소원 보기";
+      return `<button class="tag ${isTog(w)?"together":""} ${pc?"lit":""}" style="left:${x.toFixed(1)}%;top:${(y/1.12).toFixed(1)}%;--d:${(i%7)*-.55}s" data-open="${esc(w.id)}" aria-label="${lab}"><b>${esc(ini)}</b>${pc&&tw>=5?`<small>🙏${pc}</small>`:""}</button>`;
+    }).join("");
+  }else{
+    $("#listWrap").innerHTML=list.slice().reverse().map(card).join("");
+  }
+  if(openId)drawWish();
+}
+
+function openModal(html){$("#sheet").innerHTML='<button class="x" data-close aria-label="닫기">×</button>'+html;$("#modal").hidden=false}
+function closeModal(){$("#modal").hidden=true;openId=null}
+function drawWish(){
+  const w=wishes.find(x=>x.id===openId);
+  if(!w){closeModal();return}
+  $("#sheet").innerHTML='<button class="x" data-close aria-label="닫기">×</button>'+card(w);
+  $("#modal").hidden=false;
+}
+function openWish(id){openId=id;drawWish()}
+
+function openWrite(){
+  openId=null;
+  openModal(`<h2>🕯 소원 달기</h2>
+  <div class="seg"><label><input type="radio" name="kind" value="mine" checked><span>🕊 나의 기도</span></label><label><input type="radio" name="kind" value="together"><span>🤝 함께 기도 부탁</span></label></div>
+  <div id="nameBox"><label class="f">이름<input id="name" maxlength="12" placeholder="이름 또는 세례명" value="${esc(store("wt-name")||"")}"></label></div>
+  <label class="f">기도 내용<textarea id="text" maxlength="200" rows="5" placeholder="이번 주, 마음에 품은 기도를 적어 주세요"></textarea></label>
+  <p id="tnote" class="note" hidden>함께 기도 부탁은 이름 없이 나무에 걸려요.</p>
+  <div class="row"><label id="anonBox"><input type="checkbox" id="anon"> 이름 숨기기</label><span id="cnt">0/200</span></div>
+  <button id="send" class="primary">나무에 달기</button>`);
+  $("#text").addEventListener("input",e=>{$("#cnt").textContent=e.target.value.length+"/200"});
+  setTimeout(()=>{try{$("#text").focus()}catch(e){}},50);
+}
+
+let tt;
+function toast(m){const t=$("#toast");t.textContent=m;t.classList.add("on");clearTimeout(tt);tt=setTimeout(()=>t.classList.remove("on"),2800)}
+const denied="저장하지 못했어요. 잠시 후 다시 시도해 주세요.";
+
+async function send(){
+  if(!db)return toast("아직 연결되지 않았어요");
+  const kind=document.querySelector('input[name="kind"]:checked').value,tog=kind==="together";
+  const text=$("#text").value.trim(),anon=tog?true:$("#anon").checked;
+  const name=tog?"":$("#name").value.trim();
+  if(!text)return toast("기도 내용을 적어 주세요");
+  if(!tog&&!name&&!anon)return toast("이름을 적거나 ‘이름 숨기기’를 눌러 주세요");
+  if(name)store("wt-name",name);
+  const b=$("#send");b.disabled=true;
+  try{
+    await db.collection("wishes").add({text,name:name||"익명",anon,kind,uid:me,ts:Date.now()});
+    closeModal();view="tree";render();toast("소원이 나무에 걸렸어요 🎄");
+  }catch(e){b.disabled=false;toast(denied)}
+}
+async function pray(id){
+  if(!db||closed())return;
+  const ref=db.doc("prayers/"+id+"_"+me);
+  try{prayed(id)?await ref.delete():await ref.set({wishId:id,uid:me,ts:Date.now()})}catch(e){toast(denied)}
+}
+async function del(id){
+  try{await db.doc("wishes/"+id).delete();if(openId===id)closeModal();toast("소원을 내렸어요")}catch(e){toast("지우지 못했어요")}
+}
+
+document.addEventListener("click",e=>{
+  const t=e.target.closest("button,.overlay");if(!t)return;
+  if(t.dataset.open)return openWish(t.dataset.open);
+  if(t.dataset.pray)return pray(t.dataset.pray);
+  if(t.dataset.del){
+    if(!t.dataset.armed){t.dataset.armed=1;t.textContent="한 번 더 누르면 지워져요";setTimeout(()=>{if(t.isConnected){delete t.dataset.armed;t.textContent="지우기"}},3000);return}
+    return del(t.dataset.del);
+  }
+  if(t.dataset.view){view=t.dataset.view;return render()}
+  if(t.dataset.close!==undefined||t===e.target&&t.classList.contains("overlay"))return closeModal();
+  if(t.id==="add")return openWrite();
+  if(t.id==="send")return send();
+});
+document.addEventListener("change",e=>{
+  if(e.target.name!=="kind")return;
+  const tog=e.target.value==="together";
+  $("#nameBox").hidden=tog;$("#anonBox").hidden=tog;$("#tnote").hidden=!tog;
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&!$("#modal").hidden)closeModal()});
+
+async function init(){
+  render();
+  if(typeof firebase==="undefined"){$("#status").textContent="Firebase를 불러오지 못했어요. 인터넷 연결을 확인해 주세요.";return}
+  if(String(FIREBASE_CONFIG.apiKey).startsWith("여기에")){$("#status").textContent="Firebase 설정값이 아직 비어 있어요. 안내에 따라 FIREBASE_CONFIG를 채워 주세요.";return}
+  const timer=setTimeout(()=>{if(!loadedW)$("#status").textContent="연결이 오래 걸리고 있어요. 새로고침 해 보세요."},10000);
+  try{
+    firebase.initializeApp(FIREBASE_CONFIG);
+    const cred=await firebase.auth().signInAnonymously();
+    me=cred.user.uid;
+    db=firebase.firestore();
+  }catch(e){clearTimeout(timer);$("#status").textContent="연결하지 못했어요. 잠시 후 새로고침 해 보세요.";return}
+  db.collection("wishes").onSnapshot(s=>{wishes=s.docs.map(d=>Object.assign({id:d.id},d.data()));loadedW=true;clearTimeout(timer);$("#status").textContent="";render()},()=>{$("#status").textContent="소원을 불러오지 못했어요."});
+  db.collection("prayers").onSnapshot(s=>{prayers=s.docs.map(d=>d.data());render()},()=>{});
+}
+init();
+</script>
+</body>
+</html>
