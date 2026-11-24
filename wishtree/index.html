@@ -45,12 +45,11 @@ h1{margin:0;font-size:2rem;letter-spacing:.02em;text-shadow:0 0 18px rgba(255,21
 #tree .lt{animation:tw 1.6s ease-in-out infinite alternate}
 #tree .sp{transform-box:fill-box;transform-origin:center;animation:pulse 2.8s ease-in-out infinite alternate}
 #tags{position:absolute;inset:0;--tw:8}
-.tag{position:absolute;width:calc(var(--tw)*1cqw);aspect-ratio:4/5;transform:translateX(-50%);transform-origin:50% -6px;padding:18% 0 0;border:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#fff;color:#2b2b2b;clip-path:polygon(22% 0,78% 0,100% 16%,100% 100%,0 100%,0 16%);animation:sway 4s ease-in-out infinite alternate;animation-delay:var(--d,0s)}
-.tag.together{background:var(--red);color:#fff}
-.tag b{font-size:max(8px,calc(var(--tw)*.42cqw));line-height:1}
-.tag small{font-size:max(6px,calc(var(--tw)*.2cqw));line-height:1.2}
-.tag::after{content:"";position:absolute;top:6%;left:50%;width:12%;aspect-ratio:1;margin-left:-6%;border-radius:50%;background:rgba(0,0,0,.35)}
-.tag.lit{box-shadow:inset 0 0 0 2.5px var(--gold)}
+.tag{position:absolute;width:calc(var(--tw)*1cqw);aspect-ratio:4/5;transform:translateX(-50%);transform-origin:50% -6px;padding:0;border:0;background:rgba(255,255,255,.42);-webkit-backdrop-filter:blur(2px);backdrop-filter:blur(2px);box-shadow:inset 0 0 0 1px rgba(255,255,255,.75);clip-path:polygon(22% 0,78% 0,100% 16%,100% 100%,0 100%,0 16%);animation:sway 4s ease-in-out infinite alternate;animation-delay:var(--d,0s)}
+.tag.together{background:rgba(214,47,58,.5);box-shadow:inset 0 0 0 1px rgba(255,170,170,.85)}
+.tag::before{content:"";position:absolute;left:24%;right:24%;top:44%;height:30%;border-top:1px solid rgba(255,255,255,.8);border-bottom:1px solid rgba(255,255,255,.8)}
+.tag::after{content:"";position:absolute;top:7%;left:50%;width:13%;aspect-ratio:1;margin-left:-6.5%;border-radius:50%;background:rgba(0,0,0,.4)}
+.tag.lit{box-shadow:inset 0 0 0 1.5px var(--gold),inset 0 0 7px 1px rgba(255,210,119,.85)}
 @keyframes sway{from{transform:translateX(-50%) rotate(-3.5deg)}to{transform:translateX(-50%) rotate(3.5deg)}}
 .empty{text-align:center;color:var(--muted);margin:6px 0}
 .legend{display:flex;justify-content:center;gap:16px;flex-wrap:wrap;color:var(--muted);font-size:.85rem;margin-top:10px}
@@ -218,14 +217,13 @@ function render(){
   $("#count").textContent=loadedW&&n?n+"개의 소원이 걸려 있어요"+(closed()?" · 소원 달기는 성탄과 함께 마무리되었어요":""):"";
   $("#add").hidden=closed();
   if(view==="tree"){
-    const tw=n<=26?8:n<=52?6.6:n<=90?5.4:4.4,slots=genSlots(tw);
+    const tw=n<=26?5.6:n<=52?4.8:n<=90?4.2:3.6,slots=genSlots(tw);
     $("#tags").style.setProperty("--tw",tw);
     $("#tags").innerHTML=list.map((w,i)=>{
       const s=slots[i%slots.length],lap=Math.floor(i/slots.length),pc=pcount(w.id);
       const x=Math.min(95,s[0]+lap*1.8),y=Math.min(88,s[1]+lap*1.8);
-      const ini=isTog(w)||w.anon?"✦":([...String(w.name||"?")][0]||"?");
       const lab=isTog(w)?"함께 기도 부탁 보기":(w.anon?"익명":esc(w.name))+"의 소원 보기";
-      return `<button class="tag ${isTog(w)?"together":""} ${pc?"lit":""}" style="left:${x.toFixed(1)}%;top:${(y/1.12).toFixed(1)}%;--d:${(i%7)*-.55}s" data-open="${esc(w.id)}" aria-label="${lab}"><b>${esc(ini)}</b>${pc&&tw>=5?`<small>🙏${pc}</small>`:""}</button>`;
+      return `<button class="tag ${isTog(w)?"together":""} ${pc?"lit":""}" style="left:${x.toFixed(1)}%;top:${(y/1.12).toFixed(1)}%;--d:${(i%7)*-.55}s" data-open="${esc(w.id)}" aria-label="${lab}"></button>`;
     }).join("");
   }else{
     $("#listWrap").innerHTML=list.slice().reverse().map(card).join("");
